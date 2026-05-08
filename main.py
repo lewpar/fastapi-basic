@@ -2,6 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+
 @app.get("/")
 def get_index():
-    return { "status": "active" }
+    return {"message": "hello world!"}
